@@ -4,16 +4,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report
 
 def train_traditional_ml(X, y):
-    """
-    Train a traditional machine learning model (Random Forest) for classification.
-
-    Args:
-        X (DataFrame): Features.
-        y (Series): Target variable.
-
-    Returns:
-        dict: A dictionary containing the trained model, accuracy, and classification report.
-    """
+    
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
     model = RandomForestClassifier(random_state=42)

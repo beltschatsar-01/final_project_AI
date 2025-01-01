@@ -3,16 +3,7 @@ from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 
 def preprocess_data(df, output_path):
-    """
-    Preprocess raw data: handle missing values, scale numerical features, and save the processed data.
-
-    Args:
-        df (pd.DataFrame): Raw data as a DataFrame.
-        output_path (str): Path to save the processed data file (CSV).
-
-    Returns:
-        pd.DataFrame: Processed data ready for modeling.
-    """
+   
     try:
         if df is None or df.empty:
             print("The input DataFrame is empty or None.")

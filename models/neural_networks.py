@@ -7,16 +7,7 @@ from tensorflow.keras.utils import to_categorical
 from sklearn.preprocessing import StandardScaler
 
 def train_neural_network(X, y):
-    """
-    Train a neural network model for classification.
-
-    Args:
-        X (ndarray): Features.
-        y (ndarray): Target variable.
-
-    Returns:
-        dict: A dictionary containing the model, training history, and predictions.
-    """
+  
     y_encoded = to_categorical(y)
 
     X_train, X_test, y_train, y_test = train_test_split(X, y_encoded, test_size=0.2, random_state=42)
